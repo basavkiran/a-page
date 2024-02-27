@@ -1,0 +1,116 @@
+/* App.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* App.css */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px;
+}
+
+.centered-content {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  text-align: center;
+}
+
+.upper-part {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+.lower-part {
+  text-align: center;
+}
+
+.left,
+.right {
+  flex: 1;
+}
+
+.logo {
+  width: 300px;
+  height: auto;
+}
+
+.left-image {
+  width: 55%;
+  height: auto;
+  margin-left: 70px;
+}
+
+.right-image {
+  width: 100%;
+  height: auto;
+}
+
+.lower-image {
+  width: 70%;
+  height: auto;
+}
+.divider {
+  width: 100%; /* Adjust as needed */
+  border: none;
+  border-top: 2px solid #000; /* Set the thickness and color of the divider line */
+}
+
+.footer {
+  background-color: orange;
+  padding: 20px;
+}
+
+.bottom-bar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-item {
+  margin: 0 10px;
+}
+.bottom-item img {
+  width: 30px;
+  height: 30px;
+}
+
+.bottom-item a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.bottom-item a:hover {
+  text-decoration: underline;
+}
+
+.bottom-item span {
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .upper-part {
+    flex-direction: column;
+    align-items: center;
+  }
+}
